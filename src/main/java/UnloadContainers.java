@@ -23,7 +23,7 @@ public class UnloadContainers {
         unloadContainers.executeAll();
     }
 
-    private List<String> executeAll() {
+    public List<String> executeAll() {
         List<String> result = new ArrayList<>();
 
         result.add(execute(getShip0(), "data.txt"));

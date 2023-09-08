@@ -28,7 +28,7 @@ public class UnloadContainers {
         execute(getShip0(), "data.txt");
         execute(getShip1(), "data1.txt");
         execute(getShip2(), "data2.txt");
-        //execute(getShip3(), "data3.txt");
+        execute(getShip3(), "data3.txt");
     }
 
     private void execute(Ship ship, String filename) {
@@ -114,15 +114,15 @@ public class UnloadContainers {
 
     public Ship getShip3() {
         List<List<String>> stacks = new ArrayList<>();
-        List<String> stack1 = createStack("S", "L", "W");
-        List<String> stack2 = createStack("J", "O", "N", "Q");
-        List<String> stack3 = createStack("S", "C", "H", "L", "J");
-        List<String> stack4 = createStack("T", "W", "M", "W", "L", "G", "B");
-        List<String> stack5 = createStack("O", "D", "L", "S", "D", "H", "Q", "A");
-        List<String> stack6 = createStack("M", "J", "B", "V", "L", "H", "R", "L");
-        List<String> stack7 = createStack("D", "W", "R", "N", "J", "M");
-        List<String> stack8 = createStack("!", "Z", "T", "F", "H", "N", "D", "J");
-        List<String> stack9 = createStack("H", "E", "Q", "N", "B", "E", "T");
+        List<String> stack1 = createStack("D", "T", "R", "B", "J", "L", "W", "G");
+        List<String> stack2 = createStack("S", "W", "Y");
+        List<String> stack3 = createStack("R", "A", "T", "M");
+        List<String> stack4 = createStack("D", "T", "C", "H", "E", "P", "V");
+        List<String> stack5 = createStack("D", "P", "T", "L", "D", "Z");
+        List<String> stack6 = createStack("F", "B", "R", "Z", "J", "Q", "C", "D");
+        List<String> stack7 = createStack("S", "B", "N", "J", "G", "F", "T", "R");
+        List<String> stack8 = createStack("L", "E", "R", "B", "T", "V", "M");
+        List<String> stack9 = createStack("Q", "P", "D", "L", "R");
         stacks.add(stack1);
         stacks.add(stack2);
         stacks.add(stack3);

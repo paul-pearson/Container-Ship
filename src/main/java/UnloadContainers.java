@@ -1,4 +1,3 @@
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,25 +18,31 @@ public class UnloadContainers {
 
      */
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         UnloadContainers unloadContainers = new UnloadContainers();
         unloadContainers.executeAll();
     }
 
-    private void executeAll() {
-        execute(getShip0(), "data.txt");
-        execute(getShip1(), "data1.txt");
-        execute(getShip2(), "data2.txt");
-        execute(getShip3(), "data3.txt");
+    private List<String> executeAll() {
+        List<String> result = new ArrayList<>();
+
+        result.add(execute(getShip0(), "data.txt"));
+        result.add(execute(getShip1(), "data1.txt"));
+        result.add(execute(getShip2(), "data2.txt"));
+        result.add(execute(getShip3(), "data3.txt"));
+
+        return result;
     }
 
-    private void execute(Ship ship, String filename) {
+    private String execute(Ship ship, String filename) {
         MoveParser moveParser = new MoveParser(filename);
         List<Move> moveList = moveParser.getMoveList();
         for (Move move : moveList) {
             ship.doMove(move);
         }
-        System.out.println(ship.getWord());
+        String word = ship.getWord();
+        System.out.println(word);
+        return word;
     }
 
     public Ship getShip0() {

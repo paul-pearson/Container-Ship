@@ -182,4 +182,9 @@ Shipping containers for Java exercise
 |1|2|3|4|5|6|7|8|9|
 
 
+Why we should win:
 
+1. Collaboration - one of us wrote parser while others worked on the logic
+2. Developed solutions simulataneously - one quick and dirty with minimal testing, one more robust with more testing
+3. We had fun!
+4. We got the right answer
